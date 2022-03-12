@@ -1,5 +1,14 @@
 var updateBtns = document.getElementsByClassName('update-cart')
 
+const toggleButton = document.getElementsByClassName("toggle-button")[0]
+const navbarLinks = document.getElementsByClassName("navbar-links")[0]
+const cartTotal = document.getElementsByClassName("toggle-cart-total")[0]
+
+toggleButton.addEventListener("click", () => {
+    navbarLinks.classList.toggle("active");
+    cartTotal.classList.toggle("none");
+})
+
 for (i = 0; i < updateBtns.length; i++) {
     updateBtns[i].addEventListener('click', function() {
         var productId = this.dataset.product

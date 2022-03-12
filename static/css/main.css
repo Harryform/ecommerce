@@ -15,7 +15,10 @@ h6 {
     box-shadow: hsl(0, 0%, 80%) 0 0 16px;
     background-color: #fff;
     border-radius: 4px;
-    padding: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-around;
 }
 
 .thumbnail {
@@ -34,6 +37,122 @@ h6 {
     background-color: #4f868c !important;
 }
 
+.toggle-button {
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-cart {
+    position: absolute;
+    top: .1rem;
+    right: 1.5rem;
+    display: none;
+    justify-content: space-between;
+}
+
+.toggle-cart-total {
+    display: none;
+    text-align: center;
+    color: #fff;
+    background-color: red;
+    width: 20px;
+    height: 23px;
+    border-radius: 50%;
+    font-size: 14px;
+    position: absolute;
+    right: 3.3rem;
+    top: .8rem;
+    padding-left: 5px;
+    justify-content: space-between;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #555;
+    color: white;
+}
+
+@media (max-width: 1000px) {
+    .toggle-cart {
+        display: flex;
+    }
+    .toggle-cart-total {
+        display: flex;
+    }
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links li {
+        text-align: center;
+    }
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+.bottom-contain {
+    display: flex;
+    text-align: center;
+    padding-left: 23rem;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.contain {
+    margin-top: 2.7rem;
+    padding-left: 9rem;
+}
+
 .logo-title.navbar-brand {
     margin-left: 20px;
     font-weight: 700;
@@ -41,18 +160,18 @@ h6 {
 }
 
 .login {
-    position: relative;
-    left: 1080px;
-    top: 20px;
+    display: flex;
+    position: absolute;
+    right: 6rem;
+    top: 15px;
 }
 
 #cart-icon {
     width: 25px;
-    display: inline-block;
-    margin-left: 15px;
-    position: relative;
-    left: 1080px;
-    top: 20px;
+    display: flex;
+    position: absolute;
+    right: 3rem;
+    top: 25px;
 }
 
 #cart-total {
@@ -61,11 +180,11 @@ h6 {
     color: #fff;
     background-color: red;
     width: 20px;
-    height: 25px;
+    height: 23px;
     border-radius: 50%;
     font-size: 14px;
-    position: relative;
-    left: 1185px;
+    position: absolute;
+    right: 2rem;
     bottom: 25px;
 }
 
