@@ -122,9 +122,10 @@ h6 {
 }
 
 .bottom-contain {
+    position: relative;
     display: flex;
     text-align: center;
-    padding-left: 23rem;
+    justify-content: space-evenly;
 }
 
 .navbar-links ul {
@@ -155,6 +156,7 @@ h6 {
 
 .logo-title.navbar-brand {
     margin-left: 20px;
+    padding-right: 10px;
     font-weight: 700;
     font-size: xx-large;
 }
