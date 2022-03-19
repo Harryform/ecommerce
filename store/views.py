@@ -91,5 +91,11 @@ def processOrder(request):
     return JsonResponse('Payment Complete', safe=False)
 
 def loginPage(request):
+    data = cartData(request)
+    cartItems = data['cartItems']
+    order = data['order']
+    items = data['items']
 
-    return render(request, 'store/login.html')
+    context = {'items':items, 'order':order, 'cartItems':cartItems}
+
+    return render(request, 'store/login.html', context)
