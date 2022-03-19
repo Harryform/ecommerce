@@ -91,4 +91,5 @@ def processOrder(request):
     return JsonResponse('Payment Complete', safe=False)
 
 def loginPage(request):
-    pass
+
+    return render(request, 'store/login.html')
