@@ -89,3 +89,6 @@ def processOrder(request):
         )
 
     return JsonResponse('Payment Complete', safe=False)
+
+def loginPage(request):
+    pass
