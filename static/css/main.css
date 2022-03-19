@@ -146,7 +146,8 @@ h6 {
 }
 
 .navbar-links li:hover {
-    background-color: #555;
+    background-color: #FFC312;
+    border-radius: 15%;
 }
 
 .contain {
@@ -159,6 +160,10 @@ h6 {
     padding-right: 10px;
     font-weight: 700;
     font-size: xx-large;
+}
+
+.logo-title:hover {
+    color: #FFC312 !important;
 }
 
 .login {
