@@ -274,8 +274,8 @@ h6 {
     color: #FFC312;
 }
     
-.social_icon span:hover{
-    color: white;
+.social_icon a:hover{
+    color: whitesmoke;
     cursor: pointer;
 }
 
